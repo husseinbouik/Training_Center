@@ -47,3 +47,10 @@ CREATE TABLE registration(
    FOREIGN KEY(session_id) REFERENCES Session(session_id),
    FOREIGN KEY(learner_id) REFERENCES Learner(learner_id)
 );
+CREATE TABLE Admin(
+   admin_id INT,
+   admin_name VARCHAR(50),
+   password VARCHAR(50) NOT NULL,
+   PRIMARY KEY(admin_id, admin_name)
+);
+
