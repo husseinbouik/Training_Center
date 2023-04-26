@@ -42,7 +42,7 @@ CREATE TABLE Learner(
 CREATE TABLE registration(
    session_id INT,
    learner_id INT,
-   evaluation INT CHECK (evaluation >= 0 AND evaluation <= 100),
+   evaluation VARCHAR(50) NOT NULL,
    PRIMARY KEY(session_id, learner_id),
    FOREIGN KEY(session_id) REFERENCES Session(session_id),
    FOREIGN KEY(learner_id) REFERENCES Learner(learner_id)

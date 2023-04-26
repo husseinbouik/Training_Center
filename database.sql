@@ -27,4 +27,4 @@ VALUES (1, 'Tom', 'Smith', 'tom@example.com', 'password6'),
        (5, 'Noah', 'Brown', 'noah@example.com', 'password10');
 
 INSERT INTO Registration (session_id, learner_id, evaluation)  
-VALUES (1, 1, 95), (2, 2, 85), (3, 3, 90), (3, 4, 80), (4, 5, 75);
+VALUES (1, 1, 'valid'), (2, 2, 'valid'), (3, 3, 'valid'), (3, 4, 'valid'), (4, 5, 'valid');
